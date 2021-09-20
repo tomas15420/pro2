@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class PizzaMenu {
-    private List<PizzaMenuItem> items;
+    private final List<PizzaMenuItem> items;
     private LocalDateTime lastUpdate;
 
 
