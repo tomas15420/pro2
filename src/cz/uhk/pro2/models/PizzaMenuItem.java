@@ -5,9 +5,9 @@ public class PizzaMenuItem {
     private String description;
     private int price;
 
-    public PizzaMenuItem(String name, String desc, int price){
+    public PizzaMenuItem(String name, String description, int price){
         this.name = name;
-        description = desc;
+        this.description = description;
         this.price = price;
     }
 
@@ -33,5 +33,10 @@ public class PizzaMenuItem {
 
     public void setDescription(String description) {
         this.description = description;
+    }
+
+    @Override
+    public String toString() {
+        return name + " - " + description + " - " + price+",-";
     }
 }
